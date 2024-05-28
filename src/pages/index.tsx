@@ -3,6 +3,37 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const products = [
+  {
+    name: "Next.js",
+    description:
+      "The React Framework for Production. Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.",
+    price: 120,
+    image: "/next.svg",  
+  },
+  {
+    name: "Vercel",
+    description:
+      "Develop. Preview. Ship. The platform for developers. Instantly build and deploy your sites to a global network of edge locations.",
+    price: 100,
+    image: "/vercel.svg",
+  },
+  {
+    name: "React",
+    description:
+      "A JavaScript library for building user interfaces. Declarative, efficient, and flexible.",
+    price: 80,
+    image: "/react.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    description:
+      "A utility-first CSS framework for rapid UI development. Quickly create custom designs.",
+    price: 60,
+    image: "/tailwindcss.svg",
+  }
+]
+
 export default function Home() {
   return (
     <main
